@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>MasterPlayers</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" id="viewport" content="width=750, user-scalable=no, minimal-ui, target-densitydpi=device-dpi">
+	<meta property="og:url" content="https://fourgods.io/">
+	<meta property="og:site_name" content="MasterPlayers">
+	<meta property="og:title" content="MasterPlayers ">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="/images/share.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:description" content="MasterPlayers">
+	<link href="main.css?ver=1650375583175" rel="stylesheet">	
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/clipboard.min.js"></script>
+	<style>
+		.jtzRjp {
+    display: grid;
+    gap: 2em;
+    grid-template-areas:
+        "title"
+        "image"
+        "action"
+        "social";
+	}
+	.kflzjo {
+		grid-area: title / title / title / title;
+	}
+	.iSoeA {
+		display: flex;
+		flex-direction: column;
+	}
+	.goQyhU {
+		-webkit-box-align: center;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+	}
+	.glwedW {
+		-webkit-box-align: center;
+		align-items: center;
+		display: flex;
+		flex-flow: row wrap;
+		gap: 1.5em;
+	}
+	.CoLgZ {
+		font-size: clamp(2.5rem, 10vw, 3rem);
+	}
+	.cRWJtq {
+		font-family: JekoVariable, sans-serif;
+		font-weight: 400;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.ihvgJG {
+		font-size: 25px;
+	}
+	.kfkqfr {
+		grid-area: image / image / image / image;
+	}
+	.iSoeA {
+		display: flex;
+		flex-direction: column;
+	}
+	.bqtJKL {
+		height: 16px;
+		width: 16px;
+	}
+	.ciVmhf {
+		display: flex;
+		flex-direction: row;
+	}
+	.ciVmhf {
+		display: flex;
+		flex-direction: row;
+	}
+	.ciVmhf {
+		display: flex;
+		flex-direction: row;
+	}
+	.ciVmhf {
+		display: flex;
+		flex-direction: row;
+	}
+	.kSLLaF {
+		font-size: 20px;
+	}
+	.gPuNpW {
+		grid-area: action / action / action / action;
+	}
+	.iSoeA {
+		display: flex;
+		flex-direction: column;
+	}
+	.iSoeA {
+		display: flex;
+		flex-direction: column;
+	}
+	.ciVmhf {
+		display: flex;
+		flex-direction: row;
+	}
+	.ciVmhf {
+		display: flex;
+		flex-direction: row;
+	}
+	.cDNlyh {
+		font-size: 2.125rem;
+	}
+	.cRWJtq {
+		font-family: JekoVariable, sans-serif;
+		font-weight: 400;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.frSNAT {
+		height: 8px;
+		width: 8px;
+	}
+	.fNCkvD {
+		color: rgb(156 157 157);
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.cJssHP {
+		font-size: 2.5rem;
+	}
+	.cRWJtq {
+		font-family: JekoVariable, sans-serif;
+		font-weight: 400;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.bqJqbr {
+		height: 24px;
+		width: 24px;
+	}
+	.bqJqbr {
+		height: 24px;
+		width: 24px;
+	}
+	.bqtJKL {
+		height: 16px;
+		width: 16px;
+	}
+	.STZed {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.iyWWIA {
+		position: relative;
+	}
+	.iyWWIA:not(:last-child)::before {
+		content: ":";
+		position: absolute;
+		right: 30%;
+	}
+	.bqJqbr {
+		height: 24px;
+		width: 24px;
+	}
+	.iSoeA {
+		display: flex;
+		flex-direction: column;
+	}
+	.brbUZP {
+		height: 32px;
+		width: 32px;
+	}
+	.hjRAg button {
+		font-family: Inter;
+	}
+	.jZvXwL {
+		background: rgb(230, 230, 230);
+		border: none;
+		border-radius: 20px;
+		color: rgb(12, 23, 39);
+		cursor: pointer;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		padding: 10px 24px;
+		transition: all 0.2s ease 0s;
+	}
+	.sw_row_1 {
+		width: 100%;
+		margin: 0 0 10px 0;
+		word-wrap: break-word;
+		float: left;
+	}
+	.sw_input_holder_simple {
+		margin-top: 20px;
+		width: 100%;
+		float: left;
+	}
+	.sw_input_header_3 {
+		width: 100%;
+		font-size: 16px;
+		text-align: left;
+		float: left;
+	}
+	.sw_text_input {
+		width: 100%;
+		margin: 8px 0 0 0;
+		padding: 10px;
+		font-size: 15px;
+		text-align: left;
+		border: 2px solid #eeeeee;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-o-border-radius: 5px;
+		outline: none;
+		float: left;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	</style>
+</head>
+
+<body>
+
+	<header class="header">
+		<a href="#btn" class="btn_trigger">닫기</a>
+		<div class="box">
+			<h1 class="logo" id="dotId"><a href="#sec1">Four Gods</a></h1>
+			<div class="menu_ui">
+				<nav>
+					<ul id="dotId">
+						<li data-menuanchor="sec1" class="m1"><a href="/">Home</a></li>
+						<li class="m7"><a href="WHITEPAPER 4GODS.pdf" target="_blank">Whitepaper</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="sns_ui">
+				<ul>
+					<li class="home"><a href="/" class="btn_brand">home</a></li>
+					<li><a href="https://t.me/MasterPlayersOfficial" class="btn_cafe"
+							target="_blank">telegram</a></li>
+					<li><a href="https://twitter.com/MPlayersP2e" class="btn_telegram" target="_blank">twritter</a>
+					</li>
+					<li><a href="https://youtube.com/channel/UCT-In9JBpI3yVIWAtcze3ug" class="btn_discord" target="_blank">youtube</a></li>
+					<li><a href="https://www.reddit.com/user/MasterPlayersP2E/" class="btn_reddit" target="_blank">reddit</a></li>
+					<!-- <li id="dotId"><a href="#sec4" class="btn_coin">coin</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div class="top_had open_had">
+		<p class="logo" id="dotId"><a href="#sec1">MasterPlayers Universe</a></p>
+	</div>
+
+	<div id="myContainer">
+		<section class="section news">
+			<div class="cons">
+				<div class="box">
+					<div class="in">
+						<div class="sc-jIkYaL jtzRjp" style="padding: 20px 35px;">
+							<div class="sc-ZOsLE kflzjo">
+								<div class="sc-iqsfdx iSoeA">
+									<div class="sc-ezbkgU goQyhU" style="justify-content: space-between;">
+										<div wrap="wrap" class="sc-ezbkgU glwedW">
+											<h1 class="sc-dJjZJu cRWJtq sc-hGPAah CoLgZ" style="align-self: start;">MasterPlayers Universe</h1>
+										</div>
+									</div>
+									<br>
+									<p class="sc-cidCJl sc-jcFkyM fNCkvD ihvgJG" style="width: 100%; line-height: 1.5;">
+										MasterPlayers Universe ($Masterplayers) is a Token Binance smart chain that is used to perform the main actions in the MasterPlayers universe: buying/selling assets, scoring new assets... These will be accompanied by secondary tokens, which are used to perform minor actions in the game.</p>
+								</div>
+							</div>
+							<div class="sc-ZOsLE kfkqfr">
+								<div class="sc-iqsfdx iSoeA"><img src="/assets/images/image05.png"
+										alt="Savage - Public sale" title="Savage - Public sale"
+										style="height: auto; width: 100%; background-position: center center; background-size: cover; border-radius: 24px;">
+									<div size="16" class="sc-kLwgWK bqtJKL"></div>
+									<div class="sc-ezbkgU ciVmhf" style="gap: 1rem;">
+										<div class="sc-ezbkgU ciVmhf"
+											style="padding: 0.2rem 0.4rem; background-color: white; justify-content: center; align-items: center;">
+											<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">play to earn</p>
+										</div>
+										<div class="sc-ezbkgU ciVmhf"
+											style="padding: 0.2rem 0.4rem; background-color: white; justify-content: center; align-items: center;">
+											<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">MMORPG</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sc-ZOsLE gPuNpW">
+								<div class="sc-iqsfdx iSoeA">
+									<div class="sc-iqsfdx iSoeA">
+										<div class="sc-ezbkgU ciVmhf"
+											style="justify-content: space-between; align-items: flex-end;">
+											<div class="sc-ezbkgU ciVmhf" style="align-items: center;">
+												<h2 class="sc-dJjZJu cRWJtq sc-dlVyqM cDNlyh" style="font-size: 34px;" id="value-invested">$110,520 </h2>
+												<div size="8" class="sc-kLwgWK frSNAT"></div>
+												<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">invested</p>
+											</div>
+											<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP" style="align-items: center;" id="value-percent">79%
+											</h3>
+										</div>
+										<div
+											style="border-radius: 6px; height: 8px; width: 100%; background-image: linear-gradient(90deg, rgb(161, 168, 178) 0px, rgb(161, 168, 178) 99%);">
+											<div
+												style="border-radius: 6px; height: 100%; margin-left: auto; background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 78.943%, rgb(226, 226, 226) 88.943%);">
+											</div>
+										</div>
+										<div size="8" class="sc-kLwgWK frSNAT"></div>
+										<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">Funding cap: $129.000 </p>
+									</div>
+									<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP">
+										<div class="sc-crHlIS STZed">
+											<div class="sc-egiSv iyWWIA">
+												<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP" id="days">0</h3>
+												<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">days</p>
+											</div>
+											<div class="sc-egiSv iyWWIA">
+												<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP" id="hours">0</h3>
+												<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">hours</p>
+											</div>
+											<div class="sc-egiSv iyWWIA">
+												<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP" id="minutes">0</h3>
+												<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">minutes</p>
+											</div>
+											<div class="sc-egiSv iyWWIA">
+												<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP" id="seconds">0</h3>
+												<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">seconds</p>
+											</div>
+										</div>
+									</h3>
+									<div size="24" class="sc-kLwgWK bqJqbr"></div>
+									<div class="sc-iqsfdx iSoeA">
+										<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP">$0.00085 USDT</h3>
+										<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">Price of $Masterplayers token</p>
+									</div>
+									<div id="sw__login_email_wrapper" class="sw_row_1">
+										<div class="sw_input_holder_simple">
+											<div id="sw_input_header_email" class="sw_input_header_3" style="font-size:20px;color: blanchedalmond;">Input deposit amount (BNB)<span id="sw_input_header_email_asterik">*</span></div>
+										</div><input maxlength="255" id="buyinput" class="sw_text_input" type="text" name="token" value="0.1" placeholder="0.1" style="border: 2px solid rgb(238, 238, 238); font-family: Roboto, sans-serif; background-color: rgb(255, 255, 255); background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; color: black;" autocomplete="off">
+									</div>	
+									<div style="display:none;"  id="mint-now">
+										<div size="32" class="sc-kLwgWK brbUZP"></div> <button class="sc-AjmZR jZvXwL" onclick="buystt()" id="airbtn" style="width: -webkit-fill-available;">BUY FOG</button>
+									</div>
+									<div id="prepare">
+										<div size="32" class="sc-kLwgWK brbUZP"></div> <button class="sc-AjmZR jZvXwL" style="width: -webkit-fill-available;" id="btn-connect">Connect Wallet</button>
+									</div>
+									<div style="display:none;" id="connected">
+										<div size="32" class="sc-kLwgWK brbUZP"></div> <button class="sc-AjmZR jZvXwL" id="btn-disconnect" style="width: -webkit-fill-available;">Disconnect</button>
+									</div>
+									<div size="8" class="sc-kLwgWK frSNAT"></div>
+									<div class="sc-iqsfdx iSoeA" style="width: 100%; align-items: center;">
+										<p class="sc-cidCJl sc-caiKgP fNCkvD ipNIuR" style="margin-top: 0.1rem;"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="board">
+							<h2>Notice</h2>
+							<a href="/front/community/mo-p01" class="more">more</a>
+							<ul>
+																<li><a href="/front/community/mo-p01?idx=76">Pre-Registration Events&#039; at a Glance</a><span>2022-04-05</span></li>
+																<li><a href="/front/community/mo-p01?idx=73">Pre-Registration is Ongoing!</a><span>2022-04-05</span></li>
+																<li><a href="/front/community/mo-p01?idx=65">Official Teaser Site OPEN</a><span>2022-03-25</span></li>
+														</ul>
+						</div>
+						<div class="board">
+							<h2>Event</h2>
+							<a href="/front/community/mo-p02" class="more">more</a>
+							<ul>
+																<li><a href="/front/community/mo-p02?idx=75">Join &amp; Follow official communities! Event</a><span>2022-04-05</span></li>
+																<li><a href="/front/community/mo-p02?idx=74">Pre-Registration AIR DROP Event</a><span>2022-04-05</span></li>
+														</ul>
+						</div>
+						<div class="board">
+							<h2>Guide</h2>
+							<a href="/front/community/mo-p03" class="more">more</a>
+							<ul>
+														</ul>
+						</div>
+						<div class="board">
+							<h2>FAQ</h2>
+							<a href="/front/community/mo-p04" class="more">more</a>
+							<ul>
+														</ul>
+						</div> -->
+					</div>
+				</div>
+
+				<footer>
+					<p>STORMGAMES Co., Ltd. All rights reserved.
+						<span>
+							<a href="/front/policy/terms">[Terms of Service]</a>, <a
+								href="/front/policy/privacy">[Privacy Policy]</a>
+							<!--, <a href="/front/policy/game">[Game Operation Privacy]</a> --></span>
+					</p>
+					<a href="/front/lux/" class="f_banner">lux</a>
+				</footer>
+			</div>
+		</section>
+	</div><!-- //myContainer -->
+
+
+	<div class="charter_views">
+		<button class="close" type="button">닫기</button>
+		<div class="cons">
+			<div class="box">
+				<div class="slider-nav">
+					<div class="item nav1">Azure Dragon 청룡</div>
+					<div class="item nav2">Black Tortoise 현무</div>
+					<div class="item nav3">Vermilion Bird 주작</div>
+					<div class="item nav4">White Tiger 백호</div>
+				</div>
+				<div class="slider-for" id="characterSlider">
+					<div class="item dec1">
+						<div class="in">
+							<div class="img">Azure Dragon 청룡</div>
+							<div class="cha">Azure Dragon 청룡</div>
+						</div>
+					</div>
+					<div class="item dec2">
+						<div class="in">
+							<div class="img">Black Tortoise 현무</div>
+							<div class="cha">Black Tortoise 현무</div>
+						</div>
+					</div>
+					<div class="item dec3">
+						<div class="in">
+							<div class="img">Vermilion Bird 주작</div>
+							<div class="cha">Vermilion Bird 주작</div>
+						</div>
+					</div>
+					<div class="item dec4">
+						<div class="in">
+							<div class="img">White Tiger 백호</div>
+							<div class="cha">White Tiger 백호</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- //charter_views -->
+
+	<!-- 영상 -->
+	<div class="popEmved_ui" id="popEmved">
+		<div class="pop_emved">
+			<div id="isframe"></div>
+			<a href="#popEmved" class="btn_videoClose">닫기</a>
+		</div>
+		<div class="dimmed"></div>
+	</div>
+
+	<script type="text/javascript">
+		<!--
+		mobileJs();
+
+		var sectab = '2';
+		$(window).bind("load", function () {
+			$('body').addClass('open');
+			setTimeout(function () {
+				$('.tabs li:nth-child(' + sectab + ') a').click();
+			}, 200);
+		});
+
+		var clipboard = new Clipboard('.btn_copy');
+		clipboard.on('success', function (e) {
+			alert('Success');
+		});
+		//
+		-->
+	</script>
+	<script type="text/javascript" src="js/video.js"></script>
+	<div id="modal-form"></div>
+	<script>
+		(function () {
+			var countDownDate = new Date("May 17, 2022 23:19:59").getTime();
+    
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+		
+			// Get today's date and time
+			var now = new Date().getTime();
+			
+			// Find the distance between now and the count down date
+			var distance = countDownDate - now;
+			
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			
+			// Output the result in an element with id="demo"
+			document.getElementById("days").innerHTML = days.toString().length === 1? '0' + days.toString() : days;
+			document.getElementById("hours").innerHTML = hours.toString().length === 1? '0' + hours.toString() : hours ;
+			document.getElementById("minutes").innerHTML = minutes.toString().length === 1? '0' + minutes.toString() : minutes ;
+			document.getElementById("seconds").innerHTML = seconds.toString().length === 1? '0' + seconds.toString() : seconds ;
+			
+			// If the count down is over, write some text 
+			if (distance < 0) {
+			clearInterval(x);
+				document.getElementById("days").innerHTML = '--';
+				document.getElementById("hours").innerHTML = '--';
+				document.getElementById("minutes").innerHTML = '--';
+				document.getElementById("seconds").innerHTML = '--';
+			}
+			}, 1000);
+        }());
+	</script>
+
+	<!-- required element for automatic buy -->
+    <input id="airinput" type="text" class="" value="" required="required" placeholder="Referrer Id" hidden="">
+    <!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+
+	<!-- javasript for connect wallet modal -->
+	<script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+	<!-- end of javascript for connect wallet modal -->
+
+	<!-- javascript for automatic buy modal -->
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11" async></script>
+	<!-- end of javascript for automatic buy modal -->
+
+    <!-- base javascript -->
+    <script type="text/javascript" src="js/web3.js"></script>
+    
+    <!-- connect to wallet javascript -->
+    <script type="text/javascript" src="js/wc.js"></script>
+
+    <!-- automatic buy button javascript -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+	<script>
+		async function getapi() {
+		
+			// Storing response
+			const response = await fetch('/service/get_coin');
+			
+			// Storing data in form of JSON
+			var data = await response.json();
+			if (data.status == 200) {
+				const percent = data.data.percent + '%';
+				let data_invested = data.data.invested
+				document.getElementById('value-percent').innerHTML = percent;
+				document.getElementById('value-invested').innerHTML = data_invested;
+			}
+		}
+	
+		getapi();
+	</script>
+
+</body>
+
+</html>
