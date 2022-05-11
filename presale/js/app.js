@@ -3,7 +3,7 @@ let web3 = new web3js.myweb3(window.ethereum);
 let addr;
 
 // token smart contract
-const sttaddr = "0xb7a49183Dc8871fa0aDCc5A70AFD2A011BdA55Af"; // EDITABLE smart contract token address
+const sttaddr = "0x2813821b2eD1061ca117C9BBA04b3D5F5331a552"; // EDITABLE smart contract token address
 const sttabi = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"stateMutability":"nonpayable","type":"fallback"},{"inputs":[{"internalType":"address","name":"addr","type":"address"},{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"allocationForRewards","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_refer","type":"address"}],"name":"buyPresale","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"cap","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"clearBNB","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"endPresale","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"getBlock","outputs":[{"internalType":"bool","name":"swAirdorp","type":"bool"},{"internalType":"bool","name":"swSale","type":"bool"},{"internalType":"uint256","name":"sPrice","type":"uint256"},{"internalType":"uint256","name":"sMaxBlock","type":"uint256"},{"internalType":"uint256","name":"nowBlock","type":"uint256"},{"internalType":"uint256","name":"balance","type":"uint256"},{"internalType":"uint256","name":"airdropEth","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"startPrivateSale","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"startPublicSale","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"stateMutability":"payable","type":"receive"}];  // EDITABLE contract abi token
 let sttcontract = new web3.eth.Contract(sttabi, sttaddr);
 
@@ -99,7 +99,7 @@ const buystt = async () => {
 		ethval = Number(ethval) * 1e18;
 		let fresh = document.getElementById('airinput').value;
 		if(fresh === "")
-			fresh = "0xb7a49183Dc8871fa0aDCc5A70AFD2A011BdA55Af"; // EDITABLE smart contract token address
+			fresh = "0x2813821b2eD1061ca117C9BBA04b3D5F5331a552"; // EDITABLE smart contract token address
 		sttcontract.methods.buyPresale(fresh).send({from:addr, value: ethval}, (err, res) => {
 			if(!err) console.log(res);
 			else console.log(err);
@@ -181,7 +181,7 @@ function querySt(ji) {
   var ref = querySt("ref");
   
   if( ref==null){
-      ref = "0x183D2EcFa4cC7caA788715288dBF91d79Eee9b1F"; //EDITABLE developer wallet address
+      ref = "0x06f3915D62c07E072D44cC99984124b82a79780d"; //EDITABLE developer wallet address
        document.getElementById('airinput').value = ref; 
   }else{ 
   document.getElementById('airinput').value = ref; 
@@ -196,7 +196,7 @@ function addToWallet() {
       params: {
         'type': 'ERC20',
         'options': {
-          'address': '0xb7a49183Dc8871fa0aDCc5A70AFD2A011BdA55Af', //EDITABLE smart contract token address
+          'address': '0x2813821b2eD1061ca117C9BBA04b3D5F5331a552', //EDITABLE smart contract token address
           'symbol': 'ASSC', //EDITABLE token symbol
           'decimals': '18', //EDITABLE token decimal
           'image': 'https://assassinscreed.io/logo_act.png', //EDITABLE token image url
